@@ -74,7 +74,6 @@ a {
     background: #fff;
     border: 1px solid #f2f2f2;
     border-radius: 20px;
-    color: slategrey;
     text-transform: uppercase;
     font-family: 'Ubuntu', sans-serif;
     cursor: pointer;
@@ -100,6 +99,22 @@ a {
     color: #f2f2f2;
     text-decoration: underline;
     cursor: pointer;
+}
+.login-button {
+    background-color: #E09B2D !important;
+    border: white !important;
+    font-weight: 500 !important;
+    color: white;
+}
+.login-button:hover {
+    background-color: white !important;
+    color: black !important;
+    border: 1px solid !important;
+}
+.register-button:hover {
+    background-color: black !important;
+    color: white !important;
+    border: 1px solid !important;
 }
 
 /*Media Querie*/

@@ -188,6 +188,9 @@ html {
     padding-bottom: 20px !important;
 }
 
+
+/*** Facts & Visiting Hours ***/
+
 .visiting-hours {
     background: linear-gradient(rgba(0, 0, 0, .7), rgba(0, 0, 0, .7)), url(../img/restaurant-interior.jpg) center center no-repeat;
     background-size: cover;
