@@ -39,7 +39,6 @@ function vaciarCarrito() {
     });
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
     document.getElementsByClassName('cart-subtotal-price')[0].innerText = '$' + total
-    localStorage.clear();
 }
 
 if (document.readyState == 'loading') {
@@ -190,9 +189,6 @@ function crearObjeto(title, price, imageSrc, descripcion) {
 
 // Ese array de objetos en el carrito  se guarda en el LS
 const saveLocalStorage = (objetosEnCarrito) => localStorage.setItem('objetosEnCarritoLS', JSON.stringify(objetosEnCarrito));
-
-
-
 // Recupero el array del LS para mostrar el carrido en el init()
 let objetosEnCarritoLS = JSON.parse(localStorage.getItem('objetosEnCarritoLS'));
 // Muestro los objetos de LS en el carrito
@@ -208,7 +204,7 @@ const mostrarLS = (e) => {
     cartRow.classList.add('cart-row')
     var cartRowContents = `
     <div class="_carrito_container_products_product">
-                        <img src="${imageSrc}" alt="Pizza recomendada 1" class="_recomendacion_container_pizza_img">
+                        <img src="${imageSrc}" alt="Pizza recomendada 1" class="_recomendacion_container_img">
                         <div>
                             <h5  class="cart-item-title">${title}</h5>
                             <p>${descripcion}</p>
@@ -364,10 +360,3 @@ let compras = () => {
     window.confirm("¿Desea confirmar la compra?") ? accept() : null;
 }
 comprar.addEventListener("click", compras);
-
-const init = () => {
-    objetosEnCarritoLS.forEach(e => mostrarLS(e))
-    objetosEnCarrito = objetosEnCarritoLS;
-    updateQuantityBtnsCart()
-}
-init()

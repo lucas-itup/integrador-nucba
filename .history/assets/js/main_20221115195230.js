@@ -39,7 +39,6 @@ function vaciarCarrito() {
     });
     document.getElementsByClassName('cart-total-price')[0].innerText = '$' + total
     document.getElementsByClassName('cart-subtotal-price')[0].innerText = '$' + total
-    localStorage.clear();
 }
 
 if (document.readyState == 'loading') {
@@ -190,7 +189,7 @@ function crearObjeto(title, price, imageSrc, descripcion) {
 
 // Ese array de objetos en el carrito  se guarda en el LS
 const saveLocalStorage = (objetosEnCarrito) => localStorage.setItem('objetosEnCarritoLS', JSON.stringify(objetosEnCarrito));
-
+const cleanLocalStorage = localStorage.clear();
 
 
 // Recupero el array del LS para mostrar el carrido en el init()

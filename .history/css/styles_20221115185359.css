@@ -503,10 +503,6 @@ main {
     line-height: 15px;
 }
 
-._precio_producto {
-    color: #131415 !important;
-}
-
 input::-webkit-outer-spin-button,
 input::-webkit-inner-spin-button {
     -webkit-appearance: none;

@@ -480,7 +480,6 @@ main {
     flex-direction: column;
     align-items: center;
     gap: 20px;
-    margin-bottom: 30px;
 }
 
 ._carrito_container_end button {
@@ -501,10 +500,6 @@ main {
     opacity: 0.3;
     letter-spacing: 0.5px;
     line-height: 15px;
-}
-
-._precio_producto {
-    color: #131415 !important;
 }
 
 input::-webkit-outer-spin-button,
