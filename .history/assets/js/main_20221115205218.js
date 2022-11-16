@@ -268,7 +268,7 @@ const renderProduct = (product) => {
             <p class="_descripcion_producto">${comentario}</p>
         </div>
       <div class="_results_container_output_2">
-        <h5 class="_precio_producto filtro">$ ${precio}</h5>
+        <h5 class="_precio_producto">$ ${precio}</h5>
         <button class="btnAddProduct render"
         data-id='${id}'
         data-name='${name}'

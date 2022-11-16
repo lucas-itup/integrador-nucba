@@ -93,13 +93,12 @@ const addProductCart = (e) => {
     //funcion remover producto del carrito
 const removeProductCart = (e) => {
 
-    // e.target.classList.remove("disable");
+    e.target.classList.remove("disable");
     if (e.target.parentNode.children[1].value > 1) {
         e.target.parentNode.children[1].value--;
         console.log(e.target.parentNode.children[1].value)
         if (e.target.parentNode.children[1].value == 1) {
             e.target.classList.add("disable");
-            updateQuantityBtnsCart()
             return;
         };
     }
@@ -268,7 +267,7 @@ const renderProduct = (product) => {
             <p class="_descripcion_producto">${comentario}</p>
         </div>
       <div class="_results_container_output_2">
-        <h5 class="_precio_producto filtro">$ ${precio}</h5>
+        <h5 class="_precio_producto">$ ${precio}</h5>
         <button class="btnAddProduct render"
         data-id='${id}'
         data-name='${name}'
